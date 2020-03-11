@@ -1,0 +1,8 @@
+/.classpath
+/nbproject/
+/.project
+/build/
+/dist/
+/.gradle/
+/production/
+/.idea

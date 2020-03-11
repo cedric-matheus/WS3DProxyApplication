@@ -1,0 +1,18 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'application'
+
+
+mainClassName = 'WS3DProxyApplication.Main'
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'lib'      
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "lib", includes: ['*.jar'])
+    testImplementation     'junit:junit:4.13'
+}
